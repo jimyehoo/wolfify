@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <title>{{ .Site.Title }}</title>
 </head>
-<body>
-    <h1>Hello World, this is {{ .Page.Title }}</h1>
-    {{ range where .Pages "Type" "page" }}
+<body class="has-navbar-fixed-top">
+    <nav class="navbar is-fixed-top has-shadow">
+        {{ range where .Pages "Type" "page" }}
     <ul>
         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
     </ul>
-    {{ end }}
+        {{ end }}
+    </nav>
+    <h1>Hello World, this is {{ .Page.Title }}</h1>
     <h1>Body</h1>
 </body>
 </html>
