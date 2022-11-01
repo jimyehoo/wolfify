@@ -1,3 +1,3 @@
 ---
-title: HomePage
+title: Home _index Page
 ---

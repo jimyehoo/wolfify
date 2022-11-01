@@ -1,4 +1,4 @@
-<!DCOTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,14 +10,14 @@
     <nav class="navbar is-fixed-top has-shadow">
         <div class="container">
             <a href="/" class="navbar-item">Pee</a>
-             <div class="navbar-menu navbar-end">
-                {{ range where .Site.RegularPages "Type" "page" }}
-                    <a href="{{ .Permalink }}" class="navbar-item">{{ .Title }}</a>
-                {{ end }}
+            <div class="navbar-menu navbar-end">
+            {{ range .Site.RegularPages }}
+                <a href="{{ .Permalink }}" class="navbar-item">{{ .Title }}</a>
+            {{ end }}
             </div>
         </div>
     </nav>
-    {{ block "main" . }}{{ end }}
+    {{ block "content" . }}{{ end }}
     {{ block "footer" . }}{{ end }}
 </body>
 </html>
