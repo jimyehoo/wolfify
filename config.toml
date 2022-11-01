@@ -1,4 +1,4 @@
-baseURL = 'http://netlify.hierographical.com/'
+baseURL = 'http://netlihugo.hierographical.com/'
 languageCode = 'en-us'
 title = 'Blog Hierographical'
 
