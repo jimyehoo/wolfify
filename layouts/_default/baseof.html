@@ -9,9 +9,9 @@
 <body class="has-navbar-fixed-top">
     <nav class="navbar is-fixed-top has-shadow">
         <div class="container">
-            <a href="/" class="navbar-item">Pee</a>
+            <a href="/" class="navbar-item">{{ .Title }}</a>
             <div class="navbar-menu navbar-end">
-            {{ range .Site.RegularPages }}
+            {{ range where .Site.RegularPages "Type" "page" }}
                 <a href="{{ .Permalink }}" class="navbar-item">{{ .Title }}</a>
             {{ end }}
             </div>

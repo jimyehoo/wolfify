@@ -1,7 +1,7 @@
 ---
 title: Welcome
 draft: false
-author: "Jim"
+author: Jim
 ---
 
 Welcome to my site
