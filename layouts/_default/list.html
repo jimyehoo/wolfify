@@ -1,6 +1,11 @@
-{{ define "content" }}
+{{ define "main" }}
     <h1>{{ .Title }}</h1>
+    {{ range .Pages }}
+    <article>
+        <h2>{{ .Content }}</h2>
+    </article>
     Test
+{{ end }}
 {{ end }}
 
 

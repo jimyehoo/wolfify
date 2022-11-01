@@ -1,3 +1,4 @@
+<!DCOTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,12 +11,13 @@
         <div class="container">
         <a href="/" class="navbar-item">Pee</a>
         <div class="navbar-menu navbar-end">
-        {{ range where .Site.Pages "Type" "page" }}
+        {{ range where .Site.RegularPages "Type" "page" }}
         <a href="{{ .Permalink }}" class="navbar-item">{{ .Title }}</a>
         {{ end }}
     </div>
     </div>
     </nav>
-    {{ block "content" . }}{{ end }}
+    {{ block "main" . }}{{ end }}
+    {{ block "footer" . }}{{ end }}
 </body>
 </html>
