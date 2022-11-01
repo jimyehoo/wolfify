@@ -1,4 +1,19 @@
 ---
 label: Blog
 hide_body: false
-fields: []
+fields:
+- name: summary
+  type: text
+  config:
+    required: false
+  label: Summary
+  description: "<strong>Text</strong>"
+- name: main_article
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: main article
