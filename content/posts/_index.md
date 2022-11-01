@@ -1,3 +1,3 @@
 ---
-title: All blo posts
+title: All blog posts
 ---
